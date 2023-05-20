@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct ContentView: View {
     @State var captureImage: UIImage? = nil
     @State var isShowSheet = false
+    @State var photoPickerSelectedImage: PhotosPickerItem? = nil
     
     var body: some View {
         VStack {
@@ -41,6 +43,32 @@ struct ContentView: View {
             .sheet(isPresented: $isShowSheet) {
                 ImagePickerView(isShowSheet: $isShowSheet, captureImage: $captureImage)
             }
+            
+            // フォトライブラリーから選択する
+            PhotosPicker(selection: $photoPickerSelectedImage, matching: .images,
+                         preferredItemEncoding: .automatic, photoLibrary: .shared()) {
+                Text("フォトライブラリーから選択する")
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 50)
+                    .background(Color.blue)
+                    .foregroundColor(Color.white)
+                    .padding()
+            }
+            // 選択した写真情報をもとに写真を取り出す
+             .onChange(of: photoPickerSelectedImage) { photosPickerItem in
+                 if let photosPickerItem {
+                     photosPickerItem.loadTransferable(type: Data.self) { result in
+                         switch result {
+                         case .success(let data):
+                             if let data {
+                                 captureImage = UIImage(data: data)
+                             }
+                         case .failure:
+                             return
+                         }
+                     }
+                 }
+             }
             
             if let captureImage,
                let shareImage = Image(uiImage: captureImage) {
