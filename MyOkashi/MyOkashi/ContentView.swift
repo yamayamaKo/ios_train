@@ -25,6 +25,8 @@ struct ContentView: View {
             
             List(okashiDataList.okashiList) { okashi in
                 Button{
+                    // Buttonがクリックされると、okashiDataList.okashiLinkを変更する
+                    // ContentViewの方に、okashiLinkプロパティを持たせれば良い気がするけど、なんでだ
                     okashiDataList.okashiLink = okashi.link
                     showSafari.toggle()
                 } label: {
@@ -43,6 +45,7 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $showSafari) {
+                // 変更された、okashiDataList.okashiLinkが遷移先になる
                 SafariView(url: okashiDataList.okashiLink!)
                     .ignoresSafeArea(edges: [.bottom])
             }
