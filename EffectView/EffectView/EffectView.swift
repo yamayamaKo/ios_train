@@ -69,7 +69,8 @@ struct EffectView: View {
                     .foregroundColor(Color.white)
             }.padding()
             
-            if let showImage, let shareImage = Image(uiImage: showImage) {
+            if let showImage = showImage?.resized(),
+               let shareImage = Image(uiImage: showImage) {
                 ShareLink(item: shareImage, subject: nil,
                           message: nil, preview: SharePreview("Photo", image: shareImage)) {
                     Text("シェア")

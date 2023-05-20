@@ -13,6 +13,7 @@
 		185C7A5D2A190ACE0026A495 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185C7A5C2A190ACE0026A495 /* Preview Assets.xcassets */; };
 		185C7A642A190AE20026A495 /* EffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C7A632A190AE20026A495 /* EffectView.swift */; };
 		185C7A662A1914350026A495 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C7A652A1914350026A495 /* ImagePickerView.swift */; };
+		185C7A6A2A1916D90026A495 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C7A692A1916D90026A495 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		185C7A5C2A190ACE0026A495 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		185C7A632A190AE20026A495 /* EffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectView.swift; sourceTree = "<group>"; };
 		185C7A652A1914350026A495 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		185C7A692A1916D90026A495 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				185C7A552A190ACD0026A495 /* EffectViewApp.swift */,
 				185C7A572A190ACD0026A495 /* ContentView.swift */,
 				185C7A652A1914350026A495 /* ImagePickerView.swift */,
+				185C7A692A1916D90026A495 /* UIImageExtension.swift */,
 				185C7A632A190AE20026A495 /* EffectView.swift */,
 				185C7A592A190ACE0026A495 /* Assets.xcassets */,
 				185C7A5B2A190ACE0026A495 /* Preview Content */,
@@ -146,6 +149,7 @@
 				185C7A662A1914350026A495 /* ImagePickerView.swift in Sources */,
 				185C7A642A190AE20026A495 /* EffectView.swift in Sources */,
 				185C7A582A190ACD0026A495 /* ContentView.swift in Sources */,
+				185C7A6A2A1916D90026A495 /* UIImageExtension.swift in Sources */,
 				185C7A562A190ACD0026A495 /* EffectViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
