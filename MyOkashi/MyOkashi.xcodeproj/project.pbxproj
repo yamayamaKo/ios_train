@@ -12,6 +12,7 @@
 		185C7A7C2A191A470026A495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185C7A7B2A191A470026A495 /* Assets.xcassets */; };
 		185C7A7F2A191A470026A495 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185C7A7E2A191A470026A495 /* Preview Assets.xcassets */; };
 		185C7A862A191A790026A495 /* OkashiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C7A852A191A790026A495 /* OkashiData.swift */; };
+		185C7A882A192E370026A495 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C7A872A192E370026A495 /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		185C7A7B2A191A470026A495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185C7A7E2A191A470026A495 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		185C7A852A191A790026A495 /* OkashiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkashiData.swift; sourceTree = "<group>"; };
+		185C7A872A192E370026A495 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				185C7A772A191A460026A495 /* MyOkashiApp.swift */,
 				185C7A792A191A460026A495 /* ContentView.swift */,
 				185C7A852A191A790026A495 /* OkashiData.swift */,
+				185C7A872A192E370026A495 /* SafariView.swift */,
 				185C7A7B2A191A470026A495 /* Assets.xcassets */,
 				185C7A7D2A191A470026A495 /* Preview Content */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185C7A882A192E370026A495 /* SafariView.swift in Sources */,
 				185C7A7A2A191A460026A495 /* ContentView.swift in Sources */,
 				185C7A862A191A790026A495 /* OkashiData.swift in Sources */,
 				185C7A782A191A460026A495 /* MyOkashiApp.swift in Sources */,
